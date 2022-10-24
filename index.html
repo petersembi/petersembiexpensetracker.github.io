@@ -29,28 +29,47 @@
                 <nav class="navbar mb-5 navbar-expand-lg bg-light">
                     <div class="container-fluid"> 
                                                
-                    
-                        <form class="d-flex" role="search">
-                          <div class="input-group ">
-                                  <span class="input-group-text" id="inputGroupPrepend3"><i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i></span>
+                    <div class="row">
+                     
+                     
+                    <div class="">
+                      <form class="d-flex" role="search">
+                        <div class="input-group ">
+                                <span class="input-group-text" id="inputGroupPrepend3"><i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i></span>
 
-                                   <input type="text" placeholder="Search Expense" class="form-control " id="" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                           
-                          </div>  
-                        <!-- <input class="form-control me-2" type="search" placeholder="Search Expense" aria-label="Search" >
-                        <button class="btn btn-outline-success" type="submit"><div class="btn-sm d-inline-block" ></div></button> -->
-                        </form>
+                                 <input type="text" placeholder="Search Expense" class="form-control " id="" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                         
+                        </div>  
+                        
+                      <!-- <input class="form-control me-2" type="search" placeholder="Search Expense" aria-label="Search" >
+                      <button class="btn btn-outline-success" type="submit"><div class="btn-sm d-inline-block" ></div></button> -->
+                      </form>
+                      
+                    </div>
+                    <div class="col-sm-2 mt-2 d-flex d-inline-block">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    </div>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
+                    </div>
+                        
+
+                       
                           <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 ms-4 mb-lg-0 float-end"></ul>
-                        <li class="nav-item dropdown mx-4"
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Sort by Month
+                          <li>
+                            <div class=" p-1">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="nav-li">WELCOME JOHN</span>
+                                
+                            </div>
+                          </li> 
+                          <li class="nav-item dropdown mx-4">
+                            <a class="nav-link dropdown-toggle nav-li" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              SORT BY MONTH
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu nav-li" aria-labelledby="navbarDropdown">
                               <li><a class="dropdown-item" href="/?month={{$month}}">Jan</a></li>
                               <li><a class="dropdown-item" href="/?month={{$month}}">February</a></li>
                               <li><a class="dropdown-item" href="/?month={{$month}}">March</a></li>
@@ -72,33 +91,28 @@
                         
 
                         
-                      <li>
-                        <div class=" p-1">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <span>WELCOME USER</span>
-                            
-                        </div>
-                      </li> 
+                     
                       <li>
                         <div class=" p-1">                      
                         
-                        <span class="mx-3"><a class="text-decoration-none" href="register.html" style="color: #54d400">REGISTER</a></span>                     
+                        <span class="mx-3"><a class="text-decoration-none nav-li" href="register.html" >REGISTER</a></span>                     
 
                        </div>
                      </li>
                       <li>
                         <div class=" p-1">
                         
-                        <span class="mx-3"><a class="text-decoration-none" href="login.html" style="color: #54d400">LOG IN</a></span>
+                        <span class="mx-3"><a class="text-decoration-none nav-li" href="login.html" style="">LOG IN</a></span>
 
                         </div>
                     </li>
                     <li>
-                      <!-- <div class=" p-1">
+                      <div class=" p-1">
                         
-                        <span class="mx-3"><a class="text-decoration-none" href="manage.html" style="color: #54d400">MANAGE LISTINGS</a></span>
+                        <a href="create.html" class="btn btn-sm absolute bottom-0 end-1o  text-white py-2 px-2 text-decoration-none me-3" style="background-color: #00ff00"
+          >Add Expense</a>
 
-                      </div> -->
+                      </div>
                     </li>
                     </ul>
                     </div>
@@ -112,7 +126,10 @@
 
       <!-- main section -->
       <main >
+        
+
         <div class="container mt-5 mb-5 position-relative" >
+          
             <div class="row mt-5 mb-5">
                 <div class="col-sm-6 col-md-3 mt-5">
                     <div class="card" style="margin-top: 60px;">
@@ -244,20 +261,17 @@
             </div>
         
       </main>
+
+      <!--=====================FOOTER================ -->
      
-        <footer class="footer fixed fixed-bottom d-flex flex-wrap justify-content-between align-items-center py-3 mb-0 mt-4 border-top"  style="background-color: black;">
-          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none " >
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          </a>
+        <footer class="footer mh-1 myfooter justify-content-center align-items-center py-3 mb-0 mt-4 border-top text-center"  style="background-color: black;">
+          <div class=" justify-content-center">
+          <p class="col-md-4 mb-0 text-muted ">&copy; 2022 Company, Inc</p>
+        </div>
+         
       
           <!-- <span>EXPENSE TRACKER</span> -->
-          <a
-          href="create.html"
-          class="btn btn-sm absolute bottom-0 end-1o  text-white py-2 px-2 text-decoration-none me-3" style="background-color: #00ff00"
-          >Add Expense</a
-      >
+          
     </div>
     
    
